@@ -3,25 +3,23 @@ import react from '@vitejs/plugin-react';
 import { terser } from 'rollup-plugin-terser'; // For JavaScript minification
 
 export default defineConfig({
+  base: "/portfolio/", // ✅ Add this line: your repo name
+
   plugins: [
     react(),
-    // Terser is only run during production build
     process.env.NODE_ENV === "production" && terser(),
   ],
 
-  // Build configuration
   build: {
-    minify: "terser", // You can also use 'esbuild' for better optimization
-    cssCodeSplit: true, // Enable CSS code splitting
+    minify: "terser",
+    cssCodeSplit: true,
     rollupOptions: {
       plugins: [terser()],
     },
   },
 
-  // Other optimizations
   optimizeDeps: {
     include: [
-      // List of libraries you want Vite to treat as dependencies
       "react",
       "react-dom",
     ],
