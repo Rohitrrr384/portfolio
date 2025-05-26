@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
 import ParticlesComponent from "../../Components/particles/particles";
-import rohit from "../../Assets/rohit.jpg";
+import rohit from "../../assets/rohit.jpg";
 
 function Home() {
   return (
