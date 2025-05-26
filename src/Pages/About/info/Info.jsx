@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import InfoImg from "../../../assets/About Me2.svg";
+import InfoImg from "../../../assets/About me.svg"; // Rename your custom image accordingly
 import { Tilt } from "react-tilt";
 
 function Info() {
@@ -19,24 +19,24 @@ function Info() {
     <div className="info">
       <div className="InfoContent">
         <h6 className="Sec_Title">ـــــ Personal Info</h6>
-        <h2>Need a Creative Product? I can Help You!</h2>
+        <h2>Looking for a Smart Digital Solution? I Can Help!</h2>
         <p>
-          Hi! I’m Belal Hesham, and I’m a frontend developer specializing in
-          crafting user interfaces and experiences for web applications. I focus
-          on creating visually appealing and interactive designs that enhance
-          the user's browsing experience.
+          Hello! I’m <strong>Rohit Rathod</strong>, an Android & Web Developer passionate about
+          building functional, beautiful, and impactful software experiences. Whether it's a full-featured
+          Android app or a sleek, interactive website, I focus on delivering smooth user experiences,
+          clean UI, and scalable backend logic. Let’s create something innovative together!
         </p>
         <Link
           className="CvBtn"
           target="_blank"
           rel="noopener noreferrer"
-          to="https://drive.google.com/file/d/1wsTXzmI736TrNq_zMCQPLb3YbUHzkzCs/view?usp=sharing"
-          data-tooltip="Cv"
+          to="https://drive.google.com/file/d/your-updated-resume-link/view?usp=sharing"
+          data-tooltip="CV"
           role="button"
           aria-label="Download CV document"
         >
           <div className="button-wrapper">
-            <div className="text">Download Cv</div>
+            <div className="text">Download CV</div>
             <span className="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,11 +64,11 @@ function Info() {
       <Tilt options={defaultOptions} className="info__image">
         <img
           src={InfoImg}
-          alt="Belal Hesham profile illustration"
+          alt="Rohit Rathod profile illustration"
           aria-describedby="image-description"
         />
         <span hidden id="image-description">
-          Cartoon style illustration of a web developer
+          Cartoon style illustration of an Android & web developer
         </span>
       </Tilt>
     </div>

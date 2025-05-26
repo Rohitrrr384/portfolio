@@ -1,55 +1,83 @@
 import "./style.scss";
 import { motion } from "framer-motion";
 
-const Loader = ({ initial }) => {
-  const icon = {
-    hidden: {
-      opacity: 0,
-      pathLength: 0,
-      fill: "rgba(255, 255, 255, 0)"
+const icon = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+    fill: "rgba(20, 20, 30, 0)",
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    pathLength: 1,
+    fill: "rgba(20, 20, 30, 0.15)",
+    transition: {
+      pathLength: { delay: custom * 0.6, type: "spring", duration: 4, bounce: 0 },
+      opacity: { delay: custom * 0.6, duration: 1 },
+      fill: { duration: 2 },
     },
-    visible: {
-      opacity: 1,
-      pathLength: 1,
-      fill: "rgba(255, 255, 255, 1)"
-    }
-  };
+  }),
+};
 
+const Loader = ({ initial }) => {
   return (
     <div className={`loadingSpinner ${initial ? "initial" : ""}`}>
-      <div className={`svg-frame`}>
+      <div className="svg-frame">
         <svg
-        className="B-loader"
-          fill="#ffffff"
-          height="200px"
-          width="200px"
-          version="1.1"
-          id="Capa_1"
+          className="B-loader"
+          height="280px"
+          width="500px"
+          viewBox="0 0 400 160"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 202 202"
-          xmlSpace="preserve"
-
         >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <motion.path
-              style={{ fill:"hsl(0, 1%, 17%)" }}
-              d="M148.004,94.812c18.332-8.126,28.671-23.362,28.671-42.752c0-17.261-6.954-31.206-20.11-40.328 C145.653,4.166,130.438,0,113.721,0H16.957v34h17v134h-17v34h90.905c14.819,0,35.992-2.245,52.705-12.94 c16.241-10.393,24.476-26.161,24.476-46.868C185.043,118.342,171.057,100.763,148.004,94.812z M103.12,80H73.957V34h26.096 c25.961,0,36.551,6.34,36.551,21.884C136.604,75.816,118.396,80,103.12,80z M73.957,115h30.838c28.537,0,40.177,7.436,40.177,25.663 c0,18.14-13.987,27.337-41.572,27.337H73.957V115z"
-              variants={icon}
-              initial="hidden"
-              animate="visible"
-              transition={{
-                default: { duration: 4.5, ease: "easeInOut" },
-                fill: { duration: 4.5, ease: [1, 0, 0.8, 1] },
-              }}
-            ></motion.path>
-          </g>
+          <defs>
+            <linearGradient id="dark-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#0f0f2d" />
+              <stop offset="100%" stopColor="#1a1a2e" />
+            </linearGradient>
+
+            {/* Only apply glow to the stroke paths */}
+            <filter id="stroke-glow" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="0" stdDeviation="6" floodColor="#1a1a2e" floodOpacity="0.5" />
+            </filter>
+          </defs>
+
+          {[0, 1, 2].map((i) => {
+            const baseX = 10 + i * 120;
+            const controlX = 80 + i * 120;
+            const arcEndX = 110 + i * 120;
+            const tailX = 115 + i * 120;
+            return (
+              <>
+                {/* Background fill (no glow) */}
+                <motion.path
+                  key={`bg-${i}`}
+                  d={`M${baseX},150 L${baseX},10 L${controlX},10 Q${arcEndX},10 ${arcEndX},40 Q${arcEndX},70 ${controlX},70 L${baseX},70 M${controlX},70 L${tailX},150`}
+                  stroke="url(#dark-gradient)"
+                  strokeWidth="12"
+                  fill="rgba(20, 20, 30, 0.15)"
+                  variants={icon}
+                  initial="hidden"
+                  animate="visible"
+                  custom={i}
+                />
+                {/* Stroke with glow */}
+                <motion.path
+                  key={`stroke-${i}`}
+                  d={`M${baseX},150 L${baseX},10 L${controlX},10 Q${arcEndX},10 ${arcEndX},40 Q${arcEndX},70 ${controlX},70 L${baseX},70 M${controlX},70 L${tailX},150`}
+                  stroke="#101020"
+                  strokeWidth="4"
+                  fill="transparent"
+                  filter="url(#stroke-glow)"
+                  variants={icon}
+                  initial="hidden"
+                  animate="visible"
+                  custom={i}
+                />
+              </>
+            );
+          })}
         </svg>
       </div>
     </div>

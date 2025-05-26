@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
 import ParticlesComponent from "../../Components/particles/particles";
+import rohit from "../../Assets/rohit.jpg";
+
 function Home() {
   return (
     <section className="Home d-flex align-items-center justify-content-sm-center">
       <div className="container">
-        <div className="row">
+        <div className="row align-items-center">
+          {/* Left Column: Text Content */}
           <div
             className="home-data col-lg-6"
             data-aos="fade-right"
@@ -13,19 +16,20 @@ function Home() {
           >
             <h1 className="title">
               I am
-              <span className="name"> Belal Hesham</span>
-              <span className="role"> Web Developer</span>
+              <span className="name"> Rohit Rathod</span>
+              <span className="role"> Android & Web Developer</span>
             </h1>
             <p className="home-description">
-              I am Egyption based Web developer & Frontend developer focused on
-              crafting clean & user-friendly experience,I am passionate about
-              building excellent software that improves the lives of those
-              around me.
+              I’m an India-based Android App Developer and Web Developer with a
+              passion for building responsive, user-centric applications. I enjoy
+              solving real-world problems with clean code, powerful tools, and
+              thoughtful design. My goal is to develop digital products that make
+              a meaningful impact.
             </p>
             <Link
               to="/about"
               className="Btn"
-              aria-label="Learn more about Belal Hesham"
+              aria-label="Learn more about Rohit Rathod"
             >
               <span>More about me </span>
               <div className="svg-wrapper-1">
@@ -46,9 +50,22 @@ function Home() {
               </div>
             </Link>
           </div>
-          <ParticlesComponent />
+
+          {/* Right Column: Image */}
+          <div
+            className="home-image col-lg-6 mt-5 mt-lg-0"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            <img
+              src={rohit} // update path if needed
+              alt="Rohit Rathod"
+              className="profile-img"
+            />
+          </div>
         </div>
       </div>
+      <ParticlesComponent />
     </section>
   );
 }

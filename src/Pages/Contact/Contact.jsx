@@ -15,29 +15,17 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubjectChange = (e) => {
-    setSubject(e.target.value);
-  };
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
+  const handleNameChange = (e) => setName(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handleSubjectChange = (e) => setSubject(e.target.value);
+  const handleMessageChange = (e) => setMessage(e.target.value);
 
   const handleSendMessage = () => {
-    const mailtoLink = `mailto:balalaboseada@icloud.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:rohitrathod15032004@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     )}`;
-
     window.location.href = mailtoLink;
 
     setName("");
@@ -53,32 +41,41 @@ const Contact = () => {
       </h2>
       <div className="Contact__Container d-grid">
         <div className="Contact__data">
-           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          <h3 className="Contact__Title"> Don't Be Shy</h3>
+          <h3 className="Contact__Title">Don't Be Shy</h3>
           <p className="Contact__description">
-            Feel free to get in touch with me. i am always open to discussing
-            new projects, creative ideas or opportunities to be part of your
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas, or opportunities to be part of your
             visions.
           </p>
           <div className="Contact__info">
             <div className="info__item d-flex align-items-center">
               <FaEnvelopeOpen className="icon__info" />
               <div>
-                <span className="info__title ">Mail Me</span>
-                <h4 className="info__desc">balalaboseada@gmail.com</h4>
+                <span className="info__title">Mail Me</span>
+                <h4 className="info__desc">rohitrathod15032004@gmail.com</h4>
               </div>
             </div>
             <div className="info__item d-flex align-items-center">
               <FaPhoneSquareAlt className="icon__info" />
               <div>
                 <span className="info__title">Call Me</span>
-                <h4 className="info__desc">01060074246</h4>
+                <h4 className="info__desc">+91 9741917875</h4>
+              </div>
+            </div>
+            <div className="info__item d-flex align-items-center">
+              <FaEnvelopeOpen className="icon__info" />
+              <div>
+                <span className="info__title">Location</span>
+                <h4 className="info__desc">
+                  At post Janamatti, Kundargi L T1 Tq. Bilagi Dt. Bagalkot,
+                  Karnataka, India
+                </h4>
               </div>
             </div>
           </div>
           <div className="contact__social d-flex">
             <a
-              href="https://www.facebook.com/belal.hesham.1848?mibextid=2JQ9oc"
+              href="https://www.facebook.com/rohitrathod" // Update with your real link
               className="contact_social_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -86,7 +83,7 @@ const Contact = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://github.com/BelalAboseada"
+              href="https://github.com/Rohitrrr384" // Update with your real link
               className="contact_social_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -94,7 +91,7 @@ const Contact = () => {
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/belal-hesham?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              href="https://www.linkedin.com/in/rohit-rathod-6b8246308" // Update with your real link
               className="contact_social_link"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +99,7 @@ const Contact = () => {
               <FaLinkedinIn />
             </a>
             <a
-              href="https://wa.me/+201060074246"
+              href="https://wa.me/919741917875"
               target="_blank"
               rel="noopener noreferrer"
               className="contact_social_link"
@@ -124,7 +121,7 @@ const Contact = () => {
             </div>
             <div className="form_input_div">
               <input
-                type="text"
+                type="email"
                 className="form_control"
                 placeholder="Your Email"
                 value={email}

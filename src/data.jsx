@@ -23,6 +23,23 @@ import starbucks from "./assets/Starbuks.png";
 import Todo from "./assets/Todo.png";
 import YumDash from "./assets/Screenshot (44).png";
 import Zakat from "./assets/Screenshot (6).png";
+import honeypot from "./assets/honeypot.png";
+import shakti from "./assets/shakti.png"; 
+import plant from "./assets/plant.png";
+import ecotrack from "./assets/eco.png";
+import traffic from "./assets/traffic.png";
+import phishguard from "./assets/phishguard.png";
+import lost from "./assets/lost.png";
+import farmer from "./assets/farmer.png";
+import skillhub from "./assets/skillhub.png";
+import virtual from "./assets/virtual.png";
+import voice from "./assets/voice.png";
+import java from "./assets/java.png"
+import cpp from "./assets/cpp.png";
+import android from "./assets/android.png";
+import kali from "./assets/kali.png";
+import python from "./assets/python.png";
+import clogo from "./assets/c.png";
 // Theme
 import Theme1 from "./assets/blue-circle-png-8.png";
 import Theme2 from "./assets/Green.png";
@@ -32,6 +49,7 @@ import Theme5 from "./assets/gold.png";
 import Theme6 from "./assets/Bink.png";
 import Theme7 from "./assets/Purple.png";
 import Theme8 from "./assets/Purple2.png";
+
 // Skills
 import Html from "./assets/html_ph9Z0PP.png";
 import Js from "./assets/Js.webp";
@@ -144,7 +162,7 @@ export const links = [
 export const stats = [
   {
     id: 1,
-    no: "+1",
+    no: "Fresher",
     img: Experience,
     title: "Year of Experience",
   },
@@ -194,15 +212,15 @@ export const skills = [
   },
   {
     id: 5,
-    title: "Redux",
-    img: Redux,
+    title: "Java",
+    img: java,
     Cat: "Skills",
   },
 
   {
     id: 6,
-    title: "Firease",
-    img: Firease,
+    title: "Kali",
+    img: kali,
     Cat: "Tools",
   },
 
@@ -221,20 +239,20 @@ export const skills = [
   },
   {
     id: 9,
-    title: "G(Search)",
-    img: Google,
+    title: "Android Studio",
+    img: android,
     Cat: "Tools",
   },
   {
     id: 10,
-    title: "sass",
-    img: sass,
+    title: "cpp",
+    img: cpp,
     Cat: "Skills",
   },
   {
     id: 11,
-    title: "Bootstrap",
-    img: Bootsrap,
+    title: "c Lang",
+    img: clogo,
     Cat: "Skills",
   },
   {
@@ -263,8 +281,8 @@ export const skills = [
   },
   {
     id: 16,
-    title: "tailwind css",
-    img: tailwind,
+    title: "Python",
+    img: python,
     Cat: "Skills",
   },
 
@@ -276,7 +294,7 @@ export const skills = [
   },
   {
     id: 17,
-    title: "Agile(Scrum)",
+    title: "Devops",
     img: Agile,
     Cat: "Tools",
   },
@@ -284,420 +302,365 @@ export const skills = [
 
 // portfolio
 export const portfolioData = [
+  // Android Projects
   {
     id: 1,
-    img: Request,
-    title: "Request",
-    category: "React",
-    desc: "Project Management App",
-
-    Overview: [
-      "Implemented roles-based access control for consultants, owners, and contractors.",
-      "Create dynamic Roles For Users ",
-      " Managed tasks, projects, and deadlines effectively.",
-      "Integrated real-time chat and notification features. ",
-      "Conducted data analysis to provide valuable insights. ",
-      "Designed and developed an admin dashboard for managing the platform",
-    ],
-  },
-  {
-    id: 2,
-    img: TChat,
-    title: "T-chat",
-    category: "React",
-    desc: "dashboard for a mobile app",
-
-    Overview: [
-      " dashboard for a mobile app to track tasks efficiently, ensuring seamless task management and real-time updates.",
-      "Implemented a user-friendly interface for easy navigation and task organization.",
-      "Added features like search, filtering, sorting, and pagination to enhance user experience.",
-      "Built a responsive design using CSS Grid and Flexbox for optimal viewing on various devices.",
-    ],
-  },
-  {
-    id: 3,
-    img: AlamalDashboard,
-    title: "Alamal",
-    category: "React",
-    desc: "medical sales management system",
-
-    Overview: [
-      "Implemented functionalities for medical representatives, pharmacies, drivers, sales managers, invoices, visits ,transactions, reports, and an admin dashboard",
-      "Create dynamic Roles For Users ",
-      " Successfully managed data related to medical reps, pharmacies, sales, and other key aspects of the medical sales process. .",
-      "Ensured data integrity and security through proper validation and error handling ",
-    ],
-  },
-  {
-    id: 4,
-    img: Movix,
-    title: "Movix",
-    category: "React",
-    desc: "Movie App",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/Movix.git",
-          link: "https://github.com/BelalAboSeada/Movix.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://movix-tau-three.vercel.app/",
-          link: "https://movix-tau-three.vercel.app/",
-        },
-      },
-    ],
-    Overview: [
-      "Movie App for Watching Trailer, description, rating and more about movies",
-      "Built using React, React-Router, Redux, and Redux-thunk",
-
-      "Consumed the movie db API to fetch movie data",
-      "Responsive design with smooth animations",
-    ],
-  },
-  {
-    id: 5,
-    img: MockMate,
-    title: "Mock Mate Ai",
-    category: "React",
-    desc: "Ai Interview Coach",
+    img: plant,
+    title: "Plant Disease Detection App",
+    category: "Android",
+    desc: "Detect plant diseases using deep learning",
     details: [
       {
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboseada/MockMate-salamHack.git",
-          link: "https://github.com/BelalAboseada/MockMate-salamHack.git",
+          title: "https://github.com/your-username/plant-disease-detection-app",
+          link: "https://github.com/your-username/plant-disease-detection-app",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://mock--mate.vercel.app/",
-          link: "https://mock--mate.vercel.app/",
+          title: "https://yourapp-plantdisease.vercel.app/",
+          link: "https://yourapp-plantdisease.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Mock Mate Ai is a cutting-edge AI-powered interview coach designed to help users practice and improve their interview skills.",
-      "It provides tailored mock interviews across various job roles, simulating real-world interview scenarios with intelligent feedback.",
-      "The platform tracks progress by assigning scores after each mock interview, allowing users to monitor their performance over time and identify areas for improvement.",
-      "Additionally, Mock Mate Ai stores your interview history, enabling you to review past sessions, analyze feedback, and continuously refine your approach to different job interviews.",
-      "Whether you're preparing for technical, behavioral, or soft-skill interviews, Mock Mate Ai offers a comprehensive solution to boost your confidence and performance.",
+      "Android app that identifies plant diseases using image classification.",
+      "Custom CNN model trained on 11 disease categories using Keras and TensorFlow.",
+      "Built-in suggestion system for farmers to treat diseases based on detection.",
+      "Supports offline mode with saved model integration.",
+      "Frontend built using Android Studio with Java.",
+    ],
+  },
+  {
+    id: 2,
+    img: shakti,
+    title: "Shakti",
+    category: "Android",
+    desc: "Women's safety app with ML and emergency features",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/your-username/shakti-safety-app",
+          link: "https://github.com/your-username/shakti-safety-app",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://shakti-women-safety.vercel.app/",
+          link: "https://shakti-women-safety.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "AI-based women’s safety app providing emergency response features.",
+      "Includes voice-triggered SOS, live tracking, and safe zones.",
+      "Built-in ML model detects stress via voice tone and activates alerts.",
+      "Auto-alert system sends location and message to trusted contacts.",
+      "Android app built using Java and Firebase for backend services.",
+    ],
+  },
+  {
+    id: 3,
+    img: ecotrack,
+    title: "EcoTrack",
+    category: "Android",
+    desc: "Carbon footprint tracker app",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/your-username/ecotrack-app",
+          link: "https://github.com/your-username/ecotrack-app",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://ecotrack.vercel.app/",
+          link: "https://ecotrack.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "EcoTrack helps users track and reduce their daily carbon emissions.",
+      "Built with Android Studio and Java, with local storage for offline tracking.",
+      "Includes features like transport, energy, and diet-based carbon calculators.",
+      "Gamification system rewards eco-friendly behaviors.",
+      "Supports community leaderboard and challenge modes.",
+    ],
+  },
+
+  // Machine Learning Projects
+  {
+    id: 4,
+    img: traffic,
+    title: "Smart Traffic Predictor",
+    category: "Machine Learning",
+    desc: "Predict traffic congestion using ML models",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/your-username/traffic-predictor-ml",
+          link: "https://github.com/your-username/traffic-predictor-ml",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://smarttraffic.vercel.app/",
+          link: "https://smarttraffic.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "Uses regression models to predict traffic congestion based on GPS and weather data.",
+      "Visual dashboard for route optimization and accident prediction.",
+      "Built using Python, Pandas, Scikit-learn, and Mapbox API.",
+      "Deployed via Flask backend with React frontend.",
+      "Aims to reduce commute time and fuel consumption.",
+    ],
+  },
+
+  // Cybersecurity Projects
+  {
+    id: 5,
+    img: honeypot,
+    title: "HoneyPot 2.0",
+    category: "Cybersecurity",
+    desc: "Advanced honeypot trap system",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/your-username/honeypot-2.0",
+          link: "https://github.com/your-username/honeypot-2.0",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://honeypot-system.vercel.app/",
+          link: "https://honeypot-system.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "Cybersecurity system designed to lure and detect malicious activities.",
+      "Logs and tracks suspicious IPs and unauthorized access attempts.",
+      "Integrated dashboard for real-time monitoring and visualization.",
+      "Built using Flask, Python, MongoDB, and Socket.IO.",
+      "Helps secure internal networks through decoy file systems.",
     ],
   },
   {
     id: 6,
-    img: Medari,
-    title: "Medari",
-    category: "HTML & CSS",
-    desc: "Articles Landing Page",
-
-    Overview: [
-      "Landing page for showcasing articles with dynamic content",
-      "Built with Django backend and custom HTML/CSS/Sass UI",
-      "Integrated dynamic content loading via Django templates",
-      "Fully responsive layout across devices",
-      "Collaborated with backend team for seamless integration",
-      "Interactive elements with smooth transitions",
-    ],
-  },
-  {
-    id: 7,
-    img: YumDash,
-    title: "Yum Dash",
-    category: "React",
-    desc: "Food delivery E-commerce App",
-
+    img: phishguard,
+    title: "PhishGuard",
+    category: "Cybersecurity",
+    desc: "AI-based phishing detection system",
     details: [
       {
         icon: <FaGithub />,
-        title: "Repo : ",
+        title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboSeada/Yum-Dash.git",
-          link: "https://github.com/BelalAboSeada/Yum-Dash.git",
+          title: "https://github.com/your-username/phishguard",
+          link: "https://github.com/your-username/phishguard",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://yum-dash.web.app/",
-          link: "https://yum-dash.web.app/",
+          title: "https://phishguard.vercel.app/",
+          link: "https://phishguard.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Food ordering platform with real-time cart management",
-      "Integrated with Firebase to manage the data",
-      "Responsive design with smooth animations",
+      "Detects phishing websites using machine learning on URLs and page metadata.",
+      "Trained using datasets of phishing/malicious URLs and legitimate sites.",
+      "Includes browser extension for real-time alerts.",
+      "Built using Python (XGBoost, Random Forest), Flask, and JS for frontend.",
+      "Improves online safety by warning users about suspicious sites.",
+    ],
+  },
+
+  // Web Apps Projects
+  {
+    id: 7,
+    img: lost,
+    title: "Lost & Found System",
+    category: "Web Apps",
+    desc: "Community platform for reporting lost and found items",
+    details: [
+      {
+        icon: <FaGithub />,
+        title: "Repo :",
+        desc: {
+          title: "https://github.com/your-username/lost-found-app",
+          link: "https://github.com/your-username/lost-found-app",
+        },
+      },
+      {
+        icon: <FiExternalLink />,
+        title: "Preview : ",
+        desc: {
+          title: "https://lost-found-items.vercel.app/",
+          link: "https://lost-found-items.vercel.app/",
+        },
+      },
+    ],
+    Overview: [
+      "Web app to report and claim lost or found items in a locality or campus.",
+      "Users can post images, item description, location, and contact info.",
+      "Admin panel to verify and moderate posts.",
+      "Built with Node.js, MongoDB, and EJS templating.",
+      "Helps communities reduce loss and return items quickly.",
     ],
   },
   {
     id: 8,
-    img: CodeZone,
-    title: "Code Zone",
-    category: "JS",
-    desc: "Landing Page",
+    img: farmer,
+    title: "Farmers Auction System",
+    category: "Web Apps",
+    desc: "Bidding platform for farmers and marts",
     details: [
       {
         icon: <FaGithub />,
-        title: "Repo : ",
+        title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboSeada/code-zone.git",
-          link: "https://github.com/BelalAboSeada/code-zone.git",
+          title: "https://github.com/your-username/farmers-auction-system",
+          link: "https://github.com/your-username/farmers-auction-system",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://belalaboseada.github.io/code-zone/",
-          link: "https://belalaboseada.github.io/code-zone/",
+          title: "https://farmersauction.vercel.app/",
+          link: "https://farmersauction.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Modern landing page for a coding education platform",
-      "Responsive design with smooth animations",
+      "Platform where farmers post products for auction to marts and consumers.",
+      "Real-time bidding system with timer and alerts.",
+      "User roles include Farmers, Marts, Admins.",
+      "Tech stack: Node.js, Express, MongoDB, EJS.",
+      "Helps increase transparency and profitability in crop sales.",
     ],
   },
   {
     id: 9,
-    img: Zakat,
-    title: "Zakat App",
-    category: "React",
-    desc: "Calculator for Zakat",
+    img: skillhub,
+    title: "SkillHub",
+    category: "Web Apps",
+    desc: "Peer-to-peer microlearning platform",
     details: [
       {
         icon: <FaGithub />,
-        title: "Repo : ",
+        title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboseada/Zakat-on-Camels.git",
-          link: "https://github.com/BelalAboseada/Zakat-on-Camels.git",
+          title: "https://github.com/your-username/skillhub-platform",
+          link: "https://github.com/your-username/skillhub-platform",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://zakat-on-camel.vercel.app/",
-          link: "https://zakat-on-camel.vercel.app/",
+          title: "https://skillhub.vercel.app/",
+          link: "https://skillhub.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Islamic financial calculator for Zakat obligations",
-      "Supports multiple asset types and currencies",
+      "SkillHub connects learners and instructors for microlearning sessions.",
+      "Includes chat, scheduling, and session recording features.",
+      "Built using React, Firebase, and Node.js backend.",
+      "Supports rating and reviews for sessions.",
+      "Encourages continuous learning and skill-sharing.",
     ],
   },
+
+  // AI + NLP Projects
   {
     id: 10,
-    img: Bondi,
-    title: "Bondi",
-    category: "HTML & CSS",
-    desc: "Landing Page",
+    img: virtual,
+    title: "Virtual Assistant App",
+    category: "AI + NLP",
+    desc: "Voice-activated personal assistant with emotion detection",
     details: [
       {
         icon: <FaGithub />,
-        title: "Repo : ",
+        title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboSeada/bondi.git",
-          link: "https://github.com/BelalAboSeada/bondi.git",
+          title: "https://github.com/your-username/virtual-assistant",
+          link: "https://github.com/your-username/virtual-assistant",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://belalaboseada.github.io/bondi/",
-          link: "https://belalaboseada.github.io/bondi/",
+          title: "https://virtualassistant.vercel.app/",
+          link: "https://virtualassistant.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Modern responsive landing page",
-      "Built with pure HTML5 and CSS3",
+      "Personal assistant app with speech recognition and NLP integration.",
+      "Features sentiment analysis for empathetic responses.",
+      "Contextual task scheduling, reminders, and habit tracking.",
+      "Supports offline mode with sync and gesture control.",
+      "Built using Dialogflow, TensorFlow.js, and React Native.",
     ],
   },
   {
     id: 11,
-    img: Pixel,
-    title: "Pixel",
-    category: "JS",
-    desc: "Image Editor",
+    img: voice,
+    title: "Voice-Based Authentication",
+    category: "AI + NLP",
+    desc: "App unlocking features via unique voice recognition",
     details: [
       {
         icon: <FaGithub />,
-        title: "Repo : ",
+        title: "Repo :",
         desc: {
-          title: "https://github.com/BelalAboSeada/Pixel.git",
-          link: "https://github.com/BelalAboSeada/Pixel.git",
+          title: "https://github.com/your-username/voice-auth-app",
+          link: "https://github.com/your-username/voice-auth-app",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://belalaboseada.github.io/pixel/",
-          link: "https://belalaboseada.github.io/pixel/",
+          title: "https://voiceauth.vercel.app/",
+          link: "https://voiceauth.vercel.app/",
         },
       },
     ],
     Overview: [
-      "Browser-based image manipulation tool",
-      "Supports basic filters and transformations",
-    ],
-  },
-  {
-    id: 12,
-    img: TwitterClone,
-    title: "Twitter Clone",
-    category: "HTML & CSS",
-    desc: "App Clone",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/twitter-clone.git",
-          link: "https://github.com/BelalAboSeada/twitter-clone.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://belalaboseada.github.io/twitter-clone/",
-          link: "https://belalaboseada.github.io/twitter-clone/",
-        },
-      },
-    ],
-    Overview: [
-      "Static clone of Twitter/X UI",
-      "Responsive layout with CSS Grid",
-    ],
-  },
-  {
-    id: 13,
-    img: Crud,
-    title: "CRUD System",
-    category: "JS",
-    desc: "Data Management Application",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/cruds-system.git",
-          link: "https://github.com/BelalAboSeada/cruds-system.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://BelalAboSeada.github.io/cruds-system/",
-          link: "https://BelalAboSeada.github.io/cruds-system/",
-        },
-      },
-    ],
-    Overview: [
-      "Complete CRUD operations implementation",
-      "Local storage data persistence",
-    ],
-  },
-  {
-    id: 14,
-    img: Kasper,
-    title: "Kasper",
-    category: "HTML & CSS",
-    desc: "Landing Page",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/kasper-templete.git",
-          link: "https://github.com/BelalAboSeada/kasper-templete.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://BelalAboSeada.github.io/kasper-templete/",
-          link: "https://BelalAboSeada.github.io/kasper-templete/",
-        },
-      },
-    ],
-    Overview: [
-      "Creative agency landing page",
-      "Modern design with CSS animations",
-    ],
-  },
-  {
-    id: 15,
-    img: starbucks,
-    title: "Starbucks",
-    category: "HTML & CSS",
-    desc: "Landing Page",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/starbucks.git",
-          link: "https://github.com/BelalAboSeada/starbucks.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://BelalAboSeada.github.io/starbucks/",
-          link: "https://BelalAboSeada.github.io/starbucks/",
-        },
-      },
-    ],
-    Overview: [
-      "E-commerce landing page clone",
-      "Mobile-first responsive design",
-    ],
-  },
-  {
-    id: 16,
-    img: Todo,
-    title: "Todo List",
-    category: "JS",
-    desc: "Task Management App",
-    details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo : ",
-        desc: {
-          title: "https://github.com/BelalAboSeada/Todolist.git",
-          link: "https://github.com/BelalAboSeada/Todolist.git",
-        },
-      },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://BelalAboSeada.github.io/Todolist/",
-          link: "https://BelalAboSeada.github.io/Todolist/",
-        },
-      },
-    ],
-    Overview: [
-      "Interactive task management application",
-      "Local storage for data persistence",
+      "Voice recognition system that authenticates users to unlock app features.",
+      "Ignores unauthorized voices and uses voice biometrics.",
+      "Includes fallback methods and voice-controlled privacy features.",
+      "Built with TensorFlow, Python backend, and Android frontend.",
+      "Enhances security and personalized user experience.",
     ],
   },
 ];
