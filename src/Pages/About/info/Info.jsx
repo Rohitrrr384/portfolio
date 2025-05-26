@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import InfoImg from "../../../assets/About me.svg"; // Rename your custom image accordingly
+import InfoImg from "../../../assets/Aboutme.svg"; // Rename your custom image accordingly
 import { Tilt } from "react-tilt";
 
 function Info() {
