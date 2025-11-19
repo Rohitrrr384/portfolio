@@ -26,7 +26,7 @@ import locationsharing  from "./assets/locationsharing.png";
 import dandiya from "./assets/dandiya.png";
 import treetimer from "./assets/treetimer.png";
 import flappybird from "./assets/flappybird.png";
-import todo from "./assets/todo.png";
+import todo from "./assets/Todo.png";
 
 // Theme
 import Theme1 from "./assets/blue-circle-png-8.png";
