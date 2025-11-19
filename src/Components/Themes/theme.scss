@@ -5,7 +5,7 @@
   background-color: var(--text-white);
   padding: 15px;
   z-index: 10;
-  box-shadow: hsl(0, 0, 80%);
+  box-shadow: hsl(0, 0%, 80%);
   transform: translateX(-100%);
   will-change: transform;
   transition: all 0.5s ease;
@@ -29,13 +29,13 @@
 .theme_toggler,
 .Switcher_title,
 .Switcher_Close {
-  color: hsl(0, 0, 40%);
+  color: hsl(0, 0%, 40%);
 }
 
 .Switcher_title {
   font-size: var(--small-font-size);
   font-weight: var(--weight-600);
-  border-bottom: 1px solid hsl(0, 0, 87%);
+  border-bottom: 1px solid hsl(0, 0%, 87%);
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -48,7 +48,7 @@
   font-size: var(--large-font-size);
   place-items: center;
   cursor: pointer;
-  box-shadow: 0 0 2px hsl(0, 0, 80%);
+  box-shadow: 0 0 2px hsl(0, 0%, 80%);
   transition: all 0.5s ease;
 }
 

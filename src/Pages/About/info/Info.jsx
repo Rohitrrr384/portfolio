@@ -30,7 +30,7 @@ function Info() {
           className="CvBtn"
           target="_blank"
           rel="noopener noreferrer"
-          to="https://drive.google.com/file/d/your-updated-resume-link/view?usp=sharing"
+          to="https://drive.google.com/file/d/1pga1CB0Gvyqw0BS2EKs7-UM8xdPI99p_/view?usp=sharing"
           data-tooltip="CV"
           role="button"
           aria-label="Download CV document"

@@ -7,31 +7,12 @@ import {
 } from "react-icons/fa";
 import { FiFileText, FiExternalLink } from "react-icons/fi";
 // Projects
-import Movix from "./assets/Movix2.png";
-import Medari from "./assets/Mdari.png";
-import MockMate from "./assets/MockMate.png";
-import Request from "./assets/Request.jpg";
-import AlamalDashboard from "./assets/Alamal-dashboard.png";
-import TChat from "./assets/t.chat.png";
-import CodeZone from "./assets/Code Zone.png";
-import Bondi from "./assets/Bondi.png";
-import Pixel from "./assets/Pixel.png";
-import TwitterClone from "./assets/TwitterClone.png";
-import Crud from "./assets/Crud.png";
-import Kasper from "./assets/Kasper.png";
-import starbucks from "./assets/Starbuks.png";
-import Todo from "./assets/Todo.png";
-import YumDash from "./assets/Screenshot (44).png";
-import Zakat from "./assets/Screenshot (6).png";
 import honeypot from "./assets/honeypot.png";
 import shakti from "./assets/shakti.png"; 
 import plant from "./assets/plant.png";
-import ecotrack from "./assets/eco.png";
-import traffic from "./assets/traffic.png";
 import phishguard from "./assets/phishguard.png";
 import lost from "./assets/lost.png";
 import farmer from "./assets/farmer.png";
-import skillhub from "./assets/skillhub.png";
 import virtual from "./assets/virtual.png";
 import voice from "./assets/voice.png";
 import java from "./assets/java.png"
@@ -40,6 +21,13 @@ import android from "./assets/android.png";
 import kali from "./assets/kali.png";
 import python from "./assets/python.png";
 import clogo from "./assets/c.png";
+import blackshell from "./assets/blackshell.png";
+import locationsharing  from "./assets/locationsharing.png";
+import dandiya from "./assets/dandiya.png";
+import treetimer from "./assets/treetimer.png";
+import flappybird from "./assets/flappybird.png";
+import todo from "./assets/todo.png";
+
 // Theme
 import Theme1 from "./assets/blue-circle-png-8.png";
 import Theme2 from "./assets/Green.png";
@@ -55,20 +43,12 @@ import Html from "./assets/html_ph9Z0PP.png";
 import Js from "./assets/Js.webp";
 import Css from "./assets/css.webp";
 import React from "./assets/React.webp";
-import Redux from "./assets/Redux.png";
 import Git from "./assets/git_nnrA35B.png";
 import Github from "./assets/code_LmikzpY.png";
-import Firease from "./assets/Firbase.webp";
-import Bootsrap from "./assets/Bootstrap.png";
-import sass from "./assets/sass.svg";
-import Google from "./assets/search_v42JcMU.png";
 import Api from "./assets/api_jWHrF5L.png";
-import Deploy from "./assets/rocket.png";
 import Vscode from "./assets/visual-studio_PvbYL6E.png";
-import Gpt from "./assets/chatbot_hKae2Xk.png";
-import Agile from "./assets/Agile.png";
-import tailwind from "./assets/icons8-tailwind-css-48.png";
-import deepseek from "./assets/deepSeek.png";
+import xml from "./assets/xml.png";
+import post from "./assets/post.png";
 // Status
 import Experience from "./assets/Sucsess.png";
 import Sucsess from "./assets/experiance.png";
@@ -78,25 +58,25 @@ export const personalInfo = [
   {
     id: 1,
     title: "First Name : ",
-    description: "Belal",
+    description: "Rohit",
   },
 
   {
     id: 2,
     title: "Last Name : ",
-    description: "Hesham",
+    description: "Rathod",
   },
 
   {
     id: 3,
     title: "Age : ",
-    description: "19 Years",
+    description: "21 Years",
   },
 
   {
     id: 4,
     title: "Nationality : ",
-    description: "Egyption",
+    description: "Indian",
   },
 
   {
@@ -108,24 +88,24 @@ export const personalInfo = [
   {
     id: 6,
     title: "Address : ",
-    description: "Egypt",
+    description: "India",
   },
 
   {
     id: 7,
     title: "Phone : ",
-    description: "01060074246",
+    description: "9741917875",
   },
 
   {
     id: 8,
     title: "Email : ",
-    description: "balalaboseada@gmail.com",
+    description: "rohitrathod15032004@gmail.com",
   },
   {
     id: 10,
     title: "Langages : ",
-    description: "swahili, English ,Germany",
+    description: "Kannada, English ,Hindi",
   },
 ];
 
@@ -185,119 +165,108 @@ export const stats = [
 export const skills = [
   {
     id: 1,
+    title: "Java",
+    img: java,
+    Cat: "Skills",
+  },
+  {
+    id: 2,
+    title: "c Lang",
+    img: clogo,
+    Cat: "Skills",
+  },
+  {
+    id: 3,
+    title: "cpp",
+    img: cpp,
+    Cat: "Skills",
+  },
+  {
+    id: 4,
+    title: "Python",
+    img: python,
+    Cat: "Skills",
+  },
+  {
+    id: 5,
     title: "Html",
     img: Html,
     Cat: "Skills",
   },
-
   {
-    id: 2,
+    id: 6,
     title: "Javascript",
     img: Js,
     Cat: "Skills",
   },
 
   {
-    id: 3,
+    id: 7,
     title: "Css",
     img: Css,
     Cat: "Skills",
   },
 
   {
-    id: 4,
-    title: "React",
-    img: React,
-    Cat: "Skills",
-  },
-  {
-    id: 5,
-    title: "Java",
-    img: java,
-    Cat: "Skills",
+    id: 8,
+    title: "xml",
+    img: xml,
+    cat : "Skills"
   },
 
   {
-    id: 6,
-    title: "Kali",
+    id: 9,
+    title: "Linux",
     img: kali,
     Cat: "Tools",
   },
 
   {
-    id: 7,
+    id: 10,
     title: "git",
     img: Git,
     Cat: "Tools",
   },
 
   {
-    id: 8,
+    id: 11,
+    title: "React",
+    img: React,
+    Cat: "Tools",
+  },
+  {
+    id: 12,
     title: "GitHub",
     img: Github,
     Cat: "Tools",
   },
   {
-    id: 9,
+    id: 13,
     title: "Android Studio",
     img: android,
     Cat: "Tools",
   },
+  
+  
   {
-    id: 10,
-    title: "cpp",
-    img: cpp,
-    Cat: "Skills",
-  },
-  {
-    id: 11,
-    title: "c Lang",
-    img: clogo,
-    Cat: "Skills",
-  },
-  {
-    id: 12,
-    title: "Api",
+    id: 14,
+    title: "REST Api",
     img: Api,
     Cat: "Skills",
   },
   {
-    id: 13,
-    title: "Deploy",
-    img: Deploy,
-    Cat: "Skills",
-  },
-  {
-    id: 14,
-    title: "VS Code",
-    img: Vscode,
-    Cat: "Tools",
-  },
-  {
     id: 15,
-    title: "ChatGpt",
-    img: Gpt,
+    title: "Post man",
+    img: post,
     Cat: "Tools",
   },
   {
     id: 16,
-    title: "Python",
-    img: python,
-    Cat: "Skills",
+    title: "VS Code",
+    img: Vscode,
+    Cat: "Tools",
   },
 
-  {
-    id: 17,
-    title: "deep seek",
-    img: deepseek,
-    Cat: "Tools",
-  },
-  {
-    id: 17,
-    title: "Devops",
-    img: Agile,
-    Cat: "Tools",
-  },
 ];
 
 // portfolio
@@ -314,15 +283,15 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/plant-disease-detection-app",
-          link: "https://github.com/your-username/plant-disease-detection-app",
+          title: "https://github.com/Rohitrrr384/Snapcure",
+          link: "https://github.com/Rohitrrr384/Snapcure",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://yourapp-plantdisease.vercel.app/",
+          title: "To be host",
           link: "https://yourapp-plantdisease.vercel.app/",
         },
       },
@@ -337,6 +306,103 @@ export const portfolioData = [
   },
   {
     id: 2,
+    img: treetimer,
+    title: "Tree Timer & Productivity App",
+    category: "Android",
+    desc: "Focus timer app where trees grow as you stay productive",
+    details: [
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/TreeTimer",
+        link: "https://github.com/Rohitrrr384/TreeTimer",
+      },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "To be host",
+        link: "https://github.com/Rohitrrr384/TreeTimer",
+      },
+    },
+  ],
+  Overview: [
+    "A minimal and aesthetic timer app where leaves fall from a tree as time passes.",
+    "Customizable timer for focus sessions, studying, meditation, or workouts.",
+    "Falling leaves animation that gradually drops leaves until the timer ends.",
+    "Tree visualization that becomes emptier as time runs out.",
+    "Beautiful, calming UI/UX designed to enhance focus and reduce stress.",
+  ],
+  },
+  {
+      id: 3,
+      img: flappybird,
+      title: "Flappy Bird – Android Game",
+      category: "Android",
+      desc: "A smooth and responsive Android remake of Flappy Bird",
+      details: [
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/FlappyBird",
+        link: "https://github.com/Rohitrrr384/FlappyBird",
+      },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "To be host",
+        link: "https://github.com/Rohitrrr384/FlappyBird",
+      },
+    },
+  ],
+  Overview: [
+    "Android game inspired by the classic Flappy Bird.",
+    "Built using Canvas API and custom game loop.",
+    "Collision detection and physics implemented manually.",
+    "Smooth animations and responsive controls.",
+    "Developed fully in Java using Android Studio.",
+  ],
+  },
+  {
+    id: 4,
+    img: todo,
+    title: "Bubble To-Do App",
+    category: "Android",
+    desc: "A fun and interactive To-Do app with bubble-style tasks",
+    details: [
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/to-do",
+        link: "https://github.com/Rohitrrr384/to-do",
+      },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "To be host",
+        link: "https://github.com/Rohitrrr384/to-do",
+      },
+    },
+  ],
+  Overview: [
+    "A fun and interactive To-Do List Android App built with Java in Android Studio.",
+    "Each task appears as a bubble/balloon with playful animations.",
+    "Categories bring different bubble styles and colors.",
+    "Local storage using Room + Gson for full persistence.",
+    "Smooth animations for popping, bursting, and floating effects.",
+    "Pin important tasks to keep priority items always visible.",
+  ],
+  },
+  {
+    id: 5,
     img: shakti,
     title: "Shakti",
     category: "Android",
@@ -346,7 +412,7 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/shakti-safety-app",
+          title: "https://github.com/",
           link: "https://github.com/your-username/shakti-safety-app",
         },
       },
@@ -354,7 +420,7 @@ export const portfolioData = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://shakti-women-safety.vercel.app/",
+          title: "To be host",
           link: "https://shakti-women-safety.vercel.app/",
         },
       },
@@ -368,75 +434,76 @@ export const portfolioData = [
     ],
   },
   {
-    id: 3,
-    img: ecotrack,
-    title: "EcoTrack",
+    id: 6,
+    img: locationsharing,
+    title: "Real-Time Location Sharing App",
     category: "Android",
-    desc: "Carbon footprint tracker app",
+    desc: "Share real-time location using Google Maps and Firebase",
     details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo :",
-        desc: {
-          title: "https://github.com/your-username/ecotrack-app",
-          link: "https://github.com/your-username/ecotrack-app",
-        },
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/LocationSharing-",
+        link: "https://github.com/Rohitrrr384/LocationSharing-",
       },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://ecotrack.vercel.app/",
-          link: "https://ecotrack.vercel.app/",
-        },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "To be host",
+        link: "https://github.com/Rohitrrr384/LocationSharing-",
       },
-    ],
-    Overview: [
-      "EcoTrack helps users track and reduce their daily carbon emissions.",
-      "Built with Android Studio and Java, with local storage for offline tracking.",
-      "Includes features like transport, energy, and diet-based carbon calculators.",
-      "Gamification system rewards eco-friendly behaviors.",
-      "Supports community leaderboard and challenge modes.",
-    ],
+    },
+  ],
+  Overview: [
+    "Android app for sharing and tracking real-time locations.",
+    "Integrates Google Maps API for live user movement tracking.",
+    "Uses Firebase Realtime Database for instant location updates.",
+    "Supports live route display and friend-to-friend sharing.",
+    "Built in Android Studio using Java.",
+  ],
   },
+  
 
   // Machine Learning Projects
   {
-    id: 4,
-    img: traffic,
-    title: "Smart Traffic Predictor",
-    category: "Machine Learning",
-    desc: "Predict traffic congestion using ML models",
+    id: 7,
+    img: blackshell, 
+    title: "Black Shell Linux Simulator",
+    category: "Android",
+    desc: "A full Linux terminal simulation with Git, SSH, and system utilities",
     details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo :",
-        desc: {
-          title: "https://github.com/your-username/traffic-predictor-ml",
-          link: "https://github.com/your-username/traffic-predictor-ml",
-        },
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/Black-Shell",
+        link: "https://github.com/Rohitrrr384/Black-Shell",
       },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://smarttraffic.vercel.app/",
-          link: "https://smarttraffic.vercel.app/",
-        },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "To be host",
+        link: "https://github.com/Rohitrrr384/Black-Shell",
       },
-    ],
-    Overview: [
-      "Uses regression models to predict traffic congestion based on GPS and weather data.",
-      "Visual dashboard for route optimization and accident prediction.",
-      "Built using Python, Pandas, Scikit-learn, and Mapbox API.",
-      "Deployed via Flask backend with React frontend.",
-      "Aims to reduce commute time and fuel consumption.",
-    ],
+    },
+  ],
+  Overview: [
+    "Android app that simulates a complete Linux terminal environment.",
+    "Supports Git commands, SSH operations, and core Linux utilities.",
+    "Includes built-in tools such as a code editor, file manager, calculator, and settings system.",
+    "All components mimic real Linux behavior for an immersive experience.",
+    "Developed in Android Studio using Java with a custom command processor.",
+  ],
   },
 
   // Cybersecurity Projects
   {
-    id: 5,
+    id: 8,
     img: honeypot,
     title: "HoneyPot 2.0",
     category: "Cybersecurity",
@@ -446,15 +513,15 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/honeypot-2.0",
-          link: "https://github.com/your-username/honeypot-2.0",
+          title: "https://github.com/UnifiedBitLab/honeypot-2.0",
+          link: "https://github.com/UnifiedBitLab/honeypot-2.0",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://honeypot-system.vercel.app/",
+          title: "To be host",
           link: "https://honeypot-system.vercel.app/",
         },
       },
@@ -468,7 +535,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 6,
+    id: 9,
     img: phishguard,
     title: "PhishGuard",
     category: "Cybersecurity",
@@ -478,7 +545,7 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/phishguard",
+          title: "https://github.com/",
           link: "https://github.com/your-username/phishguard",
         },
       },
@@ -486,7 +553,7 @@ export const portfolioData = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://phishguard.vercel.app/",
+          title: "To be host",
           link: "https://phishguard.vercel.app/",
         },
       },
@@ -502,7 +569,7 @@ export const portfolioData = [
 
   // Web Apps Projects
   {
-    id: 7,
+    id: 10,
     img: lost,
     title: "Lost & Found System",
     category: "Web Apps",
@@ -512,15 +579,15 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/lost-found-app",
-          link: "https://github.com/your-username/lost-found-app",
+          title: "https://github.com/samrudhip006/LostandFound",
+          link: "https://github.com/samrudhip006/LostandFound",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://lost-found-items.vercel.app/",
+          title: "To be host",
           link: "https://lost-found-items.vercel.app/",
         },
       },
@@ -534,7 +601,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 8,
+    id: 11,
     img: farmer,
     title: "Farmers Auction System",
     category: "Web Apps",
@@ -544,15 +611,15 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/farmers-auction-system",
-          link: "https://github.com/your-username/farmers-auction-system",
+          title: "https://github.com/UnifiedBitLab/Vegies-Bidout",
+          link: "https://github.com/UnifiedBitLab/Vegies-Bidout",
         },
       },
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://farmersauction.vercel.app/",
+          title: "to be host",
           link: "https://farmersauction.vercel.app/",
         },
       },
@@ -566,41 +633,40 @@ export const portfolioData = [
     ],
   },
   {
-    id: 9,
-    img: skillhub,
-    title: "SkillHub",
+    id: 12,
+    img: dandiya,
+    title: "Dandiya Event App",
     category: "Web Apps",
-    desc: "Peer-to-peer microlearning platform",
+    desc: "Event information and management app for Dandiya festival",
     details: [
-      {
-        icon: <FaGithub />,
-        title: "Repo :",
-        desc: {
-          title: "https://github.com/your-username/skillhub-platform",
-          link: "https://github.com/your-username/skillhub-platform",
-        },
+    {
+      icon: <FaGithub />,
+      title: "Repo :",
+      desc: {
+        title: "https://github.com/Rohitrrr384/dandiya",
+        link: "https://github.com/Rohitrrr384/dandiya",
       },
-      {
-        icon: <FiExternalLink />,
-        title: "Preview : ",
-        desc: {
-          title: "https://skillhub.vercel.app/",
-          link: "https://skillhub.vercel.app/",
-        },
+    },
+    {
+      icon: <FiExternalLink />,
+      title: "Preview : ",
+      desc: {
+        title: "https://github.com/Rohitrrr384/dandiya",
+        link: "https://github.com/Rohitrrr384/dandiya",
       },
-    ],
-    Overview: [
-      "SkillHub connects learners and instructors for microlearning sessions.",
-      "Includes chat, scheduling, and session recording features.",
-      "Built using React, Firebase, and Node.js backend.",
-      "Supports rating and reviews for sessions.",
-      "Encourages continuous learning and skill-sharing.",
-    ],
+    },
+  ],
+  Overview: [
+    "A festive React app where users can write beautiful Diwali wishes.",
+    "Send floating Diyas into the sky with a smooth, magical animation.",
+    "Multiple color themes to personalize the celebration experience.",
+    "Displays recent wishes submitted by users for a community vibe.",
+  ],
   },
 
   // AI + NLP Projects
   {
-    id: 10,
+    id: 13,
     img: virtual,
     title: "Virtual Assistant App",
     category: "AI + NLP",
@@ -610,7 +676,7 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/virtual-assistant",
+          title: "https://github.com/",
           link: "https://github.com/your-username/virtual-assistant",
         },
       },
@@ -618,7 +684,7 @@ export const portfolioData = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://virtualassistant.vercel.app/",
+          title: "to be host",
           link: "https://virtualassistant.vercel.app/",
         },
       },
@@ -632,7 +698,7 @@ export const portfolioData = [
     ],
   },
   {
-    id: 11,
+    id: 14,
     img: voice,
     title: "Voice-Based Authentication",
     category: "AI + NLP",
@@ -642,7 +708,7 @@ export const portfolioData = [
         icon: <FaGithub />,
         title: "Repo :",
         desc: {
-          title: "https://github.com/your-username/voice-auth-app",
+          title: "https://github.com/",
           link: "https://github.com/your-username/voice-auth-app",
         },
       },
@@ -650,7 +716,7 @@ export const portfolioData = [
         icon: <FiExternalLink />,
         title: "Preview : ",
         desc: {
-          title: "https://voiceauth.vercel.app/",
+          title: "to be host",
           link: "https://voiceauth.vercel.app/",
         },
       },
